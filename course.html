@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<head>
+	<title>course</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<style>
+		*{
+			margin:0px;
+			padding:0px;
+			box-sizing:border-box;
+		}
+		body{
+			font-size:20px;
+			overflow-x:hidden;
+			color:white;
+			font-family: 'Flamenco', cursive;
+		}
+
+		header{
+			background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../img/img2.jpg');
+			background-size:cover;
+			background-repeat:no-repeat;
+			height:100vh;
+		}
+		.clearfix:after{
+			content:".";
+			visibility:hidden;
+			display:block;
+			height:0px;
+			clear:both;
+		}
+		.row{
+			max-width:1180px;
+			margin:0 auto;
+		}
+		.logo{
+			height:80px;
+			width:auto;
+			float:left;
+			margin-top:20px;
+		}
+		.main-nav{
+			float:right;
+			margin-top:60px;
+		}
+		.main-nav li{
+			display:inline;
+			list-style:none;
+			margin-left:40px;
+			text-decoration:none;
+		}
+		.main-nav li a{
+			padding:5px 0;
+			color:#000;
+			text-decoration:none;
+			text-transform:uppercase;
+			font-size:90%;
+		}
+		@import url("https://fonts.googleapis.com/css?family=Lobster")
+		body{
+			margin:0;
+			padding:0;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			min-height:100vh;
+			font-family:'Poppins',sans-serif;
+			
+		}
+		.container{
+			display:flex;
+			flex-wrap;
+			justify-content:space-between;
+		}
+		.container .box{
+			position:relative;
+			width:450px;
+			padding:10px;
+			background:#ddd;
+			box-shadow:0 5px 15px rgba(0,0,0,.1);
+			border-radius:5px;
+			margin:20px;
+			box-sizing:border-box;
+			overflow:hidden;
+			text-align:center;
+			margin-top:120px;
+			background-color:#000;
+		}
+			.container .box:before{
+			content:'';
+			width:50%;
+			height:100%;
+			position:absolute;
+			top:0;
+			left:0;
+			background:rgba(255,255,255,.2);
+			z-index:2;
+			pointer-events:none;
+			
+		}
+		.container .box .icon{
+			position:relative;
+			width:80px;
+			height:80px;
+			color:#fff;
+			background:#000;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			margin:0 auto;
+			border-radius:50%;
+			font-size:40px;
+			font-weight:700px;
+			transition:1s;
+		}
+		.container .box:nth-child(1) .icon{
+			box-shadow:0 0 0 0 #e91e63;
+			background: #e91e63;
+		}
+		.container .box:nth-child(1):hover .icon{
+			box-shadow:0 0 0 400px #e91e63;
+		}
+		.container .box:nth-child(2) .icon{
+			box-shadow:0 0 0 0 #23e629;
+			background: #23e629;
+		}
+		.container .box:nth-child(2):hover .icon{
+			box-shadow:0 0 0 400px #23e629;
+		}
+		.container .box:nth-child(3) .icon{
+			box-shadow:0 0 0 0 #2196f3;
+			background: #2196f3;
+		}
+		.container .box:nth-child(3):hover .icon{
+			box-shadow:0 0 0 400px #2196f3;
+		}
+		.container .box .content{
+			position:relative;
+			z-index:1;
+			transition:0.5s;
+		}
+		.container .box:hover .content{
+			color:#fff;
+		}
+		.container .box .content h3{
+			font-size:20px;
+			margin:10px 0;
+			padding:0;
+		}
+		.container .box .content p{
+			margin:0;
+			padding:0;
+		}
+		.btn a{
+			display:inline-block;
+			padding:10px 20px;
+			background:#ddd;
+			border-radius:4px;
+			text-decoration:none;
+			color:#000;
+			font-weight:500;
+			margin-top:20px;
+			box-shadow:0 2px 5px rgba(0,0,0,0.2);
+		}
+	
+		
+	</style>
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="img/logo2.png" class="logo">
+				<ul class="main-nav animated slideInDown" id="check-class">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="course.html">COURSE</a></li>
+					<li><a href="galary.html">GALARY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+				<a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars" aria-hidden="true"></i> </a>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="box">
+				<div class="icon">01</div>
+					<div class="content">
+						<h3>course name</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						It has survived not only five centuries, but also the leap into electronic typesetting, 
+						including versions of Lorem Ipsum.</p>
+						<a href="#" class="btn">Read More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="icon">02</div>
+					<div class="content">
+						<h3>course name</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						It has survived not only five centuries, but also the leap into electronic typesetting,
+						including versions of Lorem Ipsum.</p>
+						<a href="#" class="btn">Read More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="icon">03</div>
+					<div class="content">
+						<h3>course name</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						It has survived not only five centuries, but also the leap into electronic typesetting, 
+						including versions of Lorem Ipsum.</p>
+						<a href="#" class="btn">Read More</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+</body>
+</html>

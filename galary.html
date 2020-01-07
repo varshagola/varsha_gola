@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+	<head>
+		<title> Html website</title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</head>
+	<body>
+		<style>
+				*{
+			margin:0px;
+			padding:0px;
+			box-sizing:border-box;
+		}
+		body{
+			font-size:20px;
+			overflow-x:hidden;
+			color:white;
+			font-family: 'Flamenco', cursive;
+		}
+
+		header{
+			background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url('../img/img2.jpg');
+			background-size:cover;
+			background-repeat:no-repeat;
+			height:100vh;
+		}
+		.clearfix:after{
+			content:".";
+			visibility:hidden;
+			display:block;
+			height:0px;
+			clear:both;
+		}
+		.row{
+			max-width:1180px;
+			margin:0 auto;
+		}
+		.logo{
+			height:80px;
+			width:auto;
+			float:left;
+			margin-top:20px;
+		}
+		.main-nav{
+			float:right;
+			margin-top:60px;
+		}
+		.main-nav li{
+			display:inline;
+			list-style:none;
+			margin-left:40px;
+		}
+		.main-nav li a{
+			padding:5px 0;
+			color:#000;
+			text-decoration:none;
+			text-transform:uppercase;
+			font-size:90%;
+		}
+		*{
+			box-sizing:border-box;
+		}
+		.galary{
+			border:1px solid #ccc;
+		}
+		.galary img{
+			width:100%;
+			height:auto;
+		}
+		.des{
+			padding:15px;
+			text-align:center;
+			color:#000;
+		}
+		.responsive{
+			padding: 0 6px;
+			float:left;
+			width:25%;
+		}
+		@media only screen and (max-width:700px){
+			.responsive{
+				width:50%;
+				margin:6px 0;
+			}
+		}
+		@media only screen and (max-width:500px){
+			.responsive{
+				width:100%;
+				
+			}
+		}
+		</style>
+		<header>
+			<nav>
+			
+				<div class="row clearfix">
+					<img src="img/logo2.png" class="logo">
+					<ul class="main-nav animated slideInDown" id="check-class">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="course.html">COURSE</a></li>
+						<li><a href="galary.html">GALARY</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+					<a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars" aria-hidden="true"></i> </a>
+				</div>
+			</nav>
+			<h1>Responsive galary</h1>
+			<div class="responsive">
+				<div class="galary">
+					<a href="img/5.jpg" target="_blank"><img src="img/5.jpg" width="300" height="200"></a>
+					<div class="des">Add a description of the image here</div>
+				</div>
+			</div>
+			
+			<div class="responsive">
+				<div class="galary">
+					<a href="img/6.jpg" target="_blank"><img src="img/6.jpg" width="300" height="200"></a>
+					<div class="des">Add a description of the image here</div>
+				</div>
+			</div>
+			
+			<div class="responsive">
+				<div class="galary">
+					<a href="img/3.jpg" target="_blank"><img src="img/3.jpg" width="300" height="200"></a>
+					<div class="des">Add a description of the image here</div>
+				</div>
+			</div>
+			
+			<div class="responsive">
+				<div class="galary">
+					<a href="img/11.jpg" target="_blank"><img src="img/11.jpg"width="300" height="200" ></a>
+					<div class="des">Add a description of the image here</div>
+				</div>
+			</div>
+		</header>
+</body>
+</html>
